@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.0.BUILD-SNAPSHOT'
+		springBootVersion = '1.5.1.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -32,10 +32,6 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
-	compile('org.springframework.cloud:spring-cloud-starter-feign')
-	compile('org.springframework.cloud:spring-cloud-starter-hystrix')
-	compile('org.springframework.cloud:spring-cloud-starter-sleuth')
-	compile('org.springframework.cloud:spring-cloud-starter-zipkin')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
